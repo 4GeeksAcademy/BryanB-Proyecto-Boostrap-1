@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ENCABEZADO DEL SITIO WEB -->
+    <header>
+
+        <!-- NAVEGADOR -->
+
+        <nav class="row navbar bg-light p-2">
+            <div class="container-fluid">
+                <!-- IMAGEN Y LOGO -->
+
+                <div class="col-8">
+                    <a class="navbar-brand text-dark" href="#">
+                        <i class="bi bi-instagram"> Instagram</i>
+                    </a>
+                </div>
+
+
+                <!-- BOTONES (VERDE Y HERRAMIENTAS) -->
+
+
+                <div class="col-3">
+                    <button type="button" class="btn btn-success float-end" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal" data-bs-whatever="@mdo">Create a new post</button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="message-text" class="col-form-label">Caption</label>
+                                            <textarea class="form-control" id="message-text"></textarea>
+                                            <i class="bi bi-camera-fill mt-3"></i>
+                                            <i class="bi bi-geo-alt-fill mt-3 ms-2"></i>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Publish</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle float-end " type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="bi bi-nut"></i>
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                    type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i
+                        class="bi bi-grid-3x3-gap-fill"></i></button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+                    type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false"><i
+                        class="bi bi-grid-fill"></i></button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                tabindex="0">
+                <!-- PRIMERA IMAGEN DEL SCROLL -->
+                <div class="tab-content" id="scrollImagenes">
+                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                        tabindex="0">
+                        <!-- ENCABEZADO -->
+                        <div class="container mt-3" id="titulo">
+                            <div class="row">
+                                <div class="col-2"></div>
+                                <div class="col-8">
+                                    <div class="p-1 bg-light">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-9 p-3">
+                                                    <h2 class="fw-light">My crazy dog Spark!</h2>
+                                                </div>
+                                                <div class="col-3 p-3">
+                                                    <h4 class="float-end fw-light">08/26</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2"></div>
+                            </div>
+                        </div>
+                        <!-- IMAGEN -->
+                        <div class="container" id="imagen">
+                            <div class="row">
+                                <div class="col-2"></div>
+                                <div class="col-8">
+                                    <img class="rounded border border-4"
+                                        src="https://img.freepik.com/psd-gratis/sleepy-cardigan-welsh-corgi-perro-cuernos_53876-73956.jpg?t=st=1717784753~exp=1717788353~hmac=832a49e05c3321503cc2e8efb7184d0661ba9b4a35c8377e3ce7fb72d1ed9191&w=740"
+                                        width=100% height="auto" class="img-fluid" alt="...">
+                                </div>
+                                <div class="col-2"></div>
+                            </div>
+                        </div>
+                        <!-- FOOTER 1-->
+                        <div class="container " id="description" id="likes">
+                            <div class="row">
+                                <div class="col-2"></div>
+                                <div class="col-8 ">
+                                    <div class=" rounded p-1 bg-light border border-4 ">
+                                        <h4 class="p-3"><strong>204 likes</strong></h4>
+                                        <h4 class="fw-light p-3">This is an example of a very good photo that you can
+                                            post
+                                            on
+                                            Instagram</h4>
+                                    </div>
+                                </div>
+                                <div class="col-2"></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- SEGUNDA IMAGEN DEL SCROLL -->
+
+                    <div class="container mt-3" id="titulo">
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-8">
+                                <div class="p-1 bg-light">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-9 p-3">
+                                                <h2 class="fw-light">The greatness of nature</h2>
+                                            </div>
+                                            <div class="col-3 p-3"><span class="fw-light
+                                                    float-end">04/09</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2"></div>
+                        </div>
+                    </div>
+
+                    <div class="container" id="imagen">
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-8">
+                                <img class="rounded border border-4"
+                                    src="https://img.freepik.com/foto-gratis/puesta-sol-misurina_181624-34793.jpg?t=st=1717795050~exp=1717798650~hmac=96bcd0d319042f22617881fa15c816468f916285135bd57f07038f7f0e2090b8&w=900"
+                                    width=100% height="auto" class="img-fluid" alt="...">
+                            </div>
+                            <div class="col-2"></div>
+                        </div>
+                    </div>
+
+                    <div class="container " id="description" id="likes">
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-8 ">
+                                <div class=" rounded p-1 bg-light border border-4 ">
+                                    <h4 class="p-3"><strong>26,985 likes</strong></h4>
+                                    <h4 class="fw-light p-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        Reprehenderit.</h4>
+                                </div>
+                            </div>
+                            <div class="col-2"></div>
+                        </div>
+                    </div>
+
+
+                    <!-- TERCER POST DEL SCROLL -->
+
+                    <div class="container mt-3" id="titulo">
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-8">
+                                <div class="p-1 bg-light">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-9 p-3">
+                                                <h2 class="fw-light ">Messi is a World Champion!</h2>
+                                            </div>
+                                            <div class="col-3 p-3"><span class=" float-end">12/22</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="container" id="imagen">
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-8">
+                                <img class="rounded border border-4"
+                                    src="https://phantom-elmundo.unidadeditorial.es/a18722c670f17fe29a5c9754a48e6c43/crop/200x0/3072x1915/resize/700/f/webp/assets/multimedia/imagenes/2022/12/18/16713957997334.jpg"
+                                    width=100% height="auto" class="img-fluid" alt="...">
+                            </div>
+                            <div class="col-2"></div>
+                        </div>
+                    </div>
+
+                    <div class="container " id="description" id="likes">
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-8 ">
+                                <div class=" rounded p-1 bg-light border border-4 ">
+                                    <h4 class="p-3"><strong>10M likes</strong></h4>
+                                    <h4 class="fw-light p-3">Messi se gana la Eternidad.</h4>
+                                </div>
+                            </div>
+                            <div class="col-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+            <!-- PRIMER GRUPO DE 3 IMAGENES -->
+            <div>
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="rounded border border-4 border border-black"
+                                src="https://img.freepik.com/psd-gratis/sleepy-cardigan-welsh-corgi-perro-cuernos_53876-73956.jpg?t=st=1717784753~exp=1717788353~hmac=832a49e05c3321503cc2e8efb7184d0661ba9b4a35c8377e3ce7fb72d1ed9191&w=740"
+                                width=100% height="100%" class="img-fluid" alt="...">
+                        </div>
+                        <div class="col-4">
+                            <img class="rounded border border-4 border border-black"
+                                src="https://img.freepik.com/foto-gratis/puesta-sol-misurina_181624-34793.jpg?t=st=1717795050~exp=1717798650~hmac=96bcd0d319042f22617881fa15c816468f916285135bd57f07038f7f0e2090b8&w=900"
+                                width=100% height="100%" class="img-fluid" alt="...">
+                        </div>
+                        <div class="col-4">
+                            <img class="rounded border border-4 border border-black"
+                                src="https://phantom-elmundo.unidadeditorial.es/a18722c670f17fe29a5c9754a48e6c43/crop/200x0/3072x1915/resize/700/f/webp/assets/multimedia/imagenes/2022/12/18/16713957997334.jpg"
+                                width=100% height="100%" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <!-- SEGUNDO GRUPO DE  3 IMAGENES -->
+                <div class="container mt-3 ">
+                    <div class="row">
+                        <div class="col-4 ">
+                            <img class="rounded border border-4 border border-black"
+                                src="https://img.freepik.com/foto-gratis/retrato-interior-mujer-joven-emocionada-feliz-celebrando-exito-promocion-trabajo-cerca-mirando-amplia-sonrisa-alegre-tomados-mano-cara-sintiendo-alegria-felicidad_273609-7409.jpg?t=st=1717795875~exp=1717799475~hmac=a39fe53a2cd9e618cfee48d4a868e70bc1831ed3ccc02b52cb5bdafc12856763&w=1380"
+                                width=100% height="100%" class="img-fluid" alt="...">
+                        </div>
+                        <div class="col-4">
+                            <img class="rounded border border-4 border border-black"
+                                src="https://img.freepik.com/foto-gratis/torre-eiffel-puente-rio-sena-paris-francia_649448-4968.jpg?t=st=1717795947~exp=1717799547~hmac=0d78b831bdf2b16f8c7b8abb35cdc332a2c23d9dd8dd7ca95d125031a76500b3&w=740"
+                                width=100% height="100%" class="img-fluid" alt="...">
+                        </div>
+                        <div class="col-4">
+                            <img class="rounded border border-4 border border-black"
+                                src="https://img.freepik.com/foto-gratis/companeros-que-aprenden-juntos-estudio-grupo_23-2149211098.jpg?t=st=1717795987~exp=1717799587~hmac=baf72013eb66a9a834e1d02bc62700d8744e71a7d5438ff2c860ab5155e35849&w=1380"
+                                width=100% height="100%" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ULTIMO GRUPO DE 3 IMAGENES -->
+                <div class="container mt-3">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="rounded border border-4 border border-black"
+                                src="https://img.freepik.com/foto-gratis/feliz-familia-silueta-puesta-sol_1303-22466.jpg?t=st=1717796013~exp=1717799613~hmac=8828810469724b569bb9d8aa93ec68f3c95667536fc36936d09f6785fd0b3a15&w=1380"
+                                width=100% height="100%" class="img-fluid" alt="...">
+                        </div>
+                        <div class="col-4">
+                            <img class="rounded border border-4 border border-black"
+                                src="https://img.freepik.com/foto-gratis/codificacion-programas-informaticos-pantalla_53876-138060.jpg?t=st=1717796044~exp=1717799644~hmac=0719db1336326b3c4608bd7c9312ce0d94d818cb64586e8d08cab40e0448ccd8&w=996"
+                                width=100% height="100%" class="img-fluid" alt="...">
+                        </div>
+                        <div class="col-4">
+                            <img class="rounded border border-4 border border-black"
+                                src="https://img.freepik.com/foto-gratis/carreras-automoviles-competicion-deportiva_23-2150799977.jpg?t=st=1717796361~exp=1717799961~hmac=a1339f7772f500d4450d90f7eefc28c7d7e57eefa2eec14df43242b3e1df7a05&w=1380"
+                                width=100% height="100%" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        </div>
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
